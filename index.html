@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Tastes</title>
+    <link rel="shortcut icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/05/%C3%8Dcone-Computador-%C3%93culos-PNG.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+      <p>OBS: Os dados não serão salvos. Futuramente pretendo implementar algum sistema de armazenamento.</p>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="alura-logo" class="alura-logo">
+      </a>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="page-title">Personal Tastes</h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="imersão-dev">
+        <p class="page-subtitle">Quais são suas obras favoritas?</p>
+        <div class="form-wrapper">
+          <div class="input">
+            <label for="name">Nome da obra</label>
+            <input type="text" id="name" name="name" placeholder="Insira o nome da obra">
+          </div>
+          <div class="input">
+            <label for="image">Imagem da obra</label>
+            <input type="text" id="image" name="image" placeholder="Insira o link da imagem">
+          </div>
+          <div class="input">
+            <label for="category">Categoria</label>
+            <select name="category" id="category">
+              <option value="movie">Filme</option>
+              <option value="serie">Série</option>
+              <option value="book">Livro</option>
+              <option value="music">Música</option>
+              <option value="game">Jogo</option>
+              <option value="anime">Anime</option>
+              <option value="manga">Mangá</option>
+            </select>
+          </div>
+          <button id="add-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="personal-taste-list">
+        <div class="personal-taste-category" id="movie">
+          <h1>Filmes</h1>
+        </div>
+        <div class="personal-taste-category" id="serie">
+          <h1>Séries</h1>
+        </div>
+        <div class="personal-taste-category" id="book">
+          <h1>Livros</h1>
+        </div>
+        <div class="personal-taste-category" id="music">
+          <h1>Músicas</h1>
+        </div>
+        <div class="personal-taste-category" id="game">
+          <h1>Jogos</h1>
+        </div>
+        <div class="personal-taste-category" id="anime">
+          <h1>Animes</h1>
+        </div>
+        <div class="personal-taste-category" id="manga">
+          <h1>Mangás</h1>
+        </div>
+      </div>
+    </main>
+    <footer>Desenvolvido por <a href="https://github.com/YuuY314" target="_blank">Rafael Yu</a></footer>
+</body>
+</html>
