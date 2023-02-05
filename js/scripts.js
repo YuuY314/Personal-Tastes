@@ -72,9 +72,7 @@ document.addEventListener("click", (e) => {
 
     if(element.classList.contains("remove-btn")){
         parentElement.remove();
-        console.log(personalTastes);
         personalTastes = personalTastes.filter(personalTaste => personalTaste.id != parentElement.id);
-        console.log(personalTastes);
 
         personalTasteCategories.forEach(personalTasteCategory => {
             let numChilds = personalTasteCategory.childElementCount;
